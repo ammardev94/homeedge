@@ -1,0 +1,256 @@
+.img_fit {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.secMainTitle {
+    width: calc(100% - 55px);
+    margin-left: auto;
+     .subTitle {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            position: relative;
+            color: $theme-primary;
+            &:before {
+                top:50%;
+                left: -1410px;
+                height: 0;
+                border:1px solid $theme-primary;
+                width: 1400px;
+                content: '';
+                background-color: $theme-primary;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            span {
+                color: inherit;
+                font-size: inherit;
+            }
+        }
+        .mainTitle {
+            color: $theme-middle;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        p {
+            // color: #757575;
+            font-size: 14px;
+            text-align: justify;
+        }
+}
+// Banner Section
+.mainBannerSec {
+    height: 100vh;
+    position: relative;
+    .mainBannerWrapper {
+        height: 100%;
+        .mainBox {
+            height: 100%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+            }
+
+            .bannerVideo {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .contentBox {
+                position: absolute;
+                left: 0;
+                bottom: 118px;
+                width: 100%;
+
+                .bannerTitle {
+                    font-size: 36px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+
+                .subTitle {
+                    padding-left: 45px;
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    position: relative;
+                    &:before {
+                        top:50%;
+                        left: -1365px;
+                        height: 0;
+                        border:1px solid $theme-primary;
+                        width: 1400px;
+                        content: '';
+                        background-color: $theme-primary;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                    span {
+                        font-size: inherit;
+                        margin-bottom: 0;
+                        text-transform: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// About Start
+.mainAboutSec {
+    .mainImgBox {
+        .row {
+            .col-lg-6 {
+                padding-left: 0;
+                &:last-child {
+                    margin-top: 64px;
+                    .imgInnerBox {
+                        z-index: 11;
+                        position: relative;
+                        &:before {
+                            background-color: $theme-primary;
+                            bottom: -70px;
+                            right: -45px;
+                            height: 170px;
+                            width: 90px;
+                            content: "";
+                            position: absolute;
+                            background-color: #BAA38F;
+                            border-left: 1px solid white;
+                            z-index: 11;
+                            transform: rotate(40deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contentBox {
+        p {
+            color: $theme-white;
+        }
+    }
+}
+
+// Project Start
+.mainProjectSec {
+    .leftContentBox {
+        p {
+            text-align: left;
+        }
+        .propertyDetails {
+            .detailRow {
+                display: flex;
+                margin-bottom: 10px;
+                .label {
+                    width: 160px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: $theme-middle;
+                    font-family: $heading-font-family;
+                }
+                .value {
+                    color: $theme-default;
+                }
+            }
+        }
+    }
+}
+
+// Our Expertise Start
+.mainExpertiseSec {
+    .topContentBox {
+        .mainTitle {
+            color: $theme-white;
+        }
+    }
+    .expertiseBox {
+        color: $theme-white;
+            .imgBox {
+                position: relative;
+                &:before {
+                    background-color: $theme-primary;
+                    bottom: -70px;
+                    right: -45px;
+                    height: 170px;
+                    width: 90px;
+                    content: "";
+                    position: absolute;
+                    border-left: 1px solid white;
+                    z-index: 11;
+                    transform: rotate(40deg);
+            }
+        }
+    }
+}
+
+// Full Image Section
+.mainFullImgSec {
+    height: 100vh;
+    position: relative;
+    .mainWrapper {
+        height: 100%;
+        .mainBox {
+            height: 100%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+            }
+
+            .contentBox {
+                position: absolute;
+                left: 0;
+                bottom: 118px;
+                width: 100%;
+
+                .bannerTitle {
+                    font-size: 36px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+
+                .subTitle {
+                    padding-left: 45px;
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    position: relative;
+                    &:before {
+                        top:50%;
+                        left: -1365px;
+                        height: 0;
+                        border:1px solid $theme-primary;
+                        width: 1400px;
+                        content: '';
+                        background-color: $theme-primary;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                    span {
+                        font-size: inherit;
+                        margin-bottom: 0;
+                        text-transform: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
