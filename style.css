@@ -16499,7 +16499,15 @@ h6,
 }
 
 /**
- * Swiper 11.1.8
+ * Swiper 11.2.10
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2025 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: June 28, 2025
  */
 @font-face {
   font-family: swiper-icons;
@@ -17118,7 +17126,7 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
 }
 
-.swiper-cube {
+.swiper.swiper-cube {
   overflow: visible;
 }
 
@@ -17180,7 +17188,7 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-.swiper-flip {
+.swiper.swiper-flip {
   overflow: visible;
 }
 
@@ -17209,7 +17217,7 @@ button.swiper-pagination-bullet {
   transition-property: transform, opacity, height;
 }
 
-.swiper-cards {
+.swiper.swiper-cards {
   overflow: visible;
 }
 
@@ -18363,23 +18371,45 @@ body.compensate-for-scrollbar {
   z-index: 11;
   position: relative;
 }
-.mainAboutSec .mainImgBox .row .col-lg-6:last-child .imgInnerBox:before {
+.mainAboutSec .mainImgBox .row .col-lg-6:last-child .imgInnerBox::before {
+  content: "";
   background-color: #BAA38F;
   bottom: -70px;
   right: -45px;
   height: 170px;
   width: 90px;
-  content: "";
   position: absolute;
-  background-color: #BAA38F;
+  background-color: #baa38f;
   border-left: 1px solid white;
   z-index: 11;
   transform: rotate(40deg);
 }
+.mainAboutSec .contentBox {
+  padding-left: 50px;
+}
+.mainAboutSec .contentBox .subTitle {
+  position: relative;
+}
+.mainAboutSec .contentBox .subTitle::before {
+  content: "";
+  top: 50%;
+  left: -210px;
+  height: 0;
+  border: 1px solid #fff;
+  width: 200px;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  transform: translateY(-50%);
+}
 .mainAboutSec .contentBox p {
   color: #ffffff;
+  text-align: justify;
 }
 
+.mainProjectSec .img-wrap img {
+  width: 100%;
+}
 .mainProjectSec .leftContentBox p {
   text-align: left;
 }
@@ -18405,19 +18435,23 @@ body.compensate-for-scrollbar {
   color: #ffffff;
 }
 .mainExpertiseSec .expertiseBox .imgBox {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 70%, 80% 100%, 0 100%, 0% 80%, 0 0);
   position: relative;
 }
+.mainExpertiseSec .expertiseBox .imgBox img {
+  width: 100%;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
 .mainExpertiseSec .expertiseBox .imgBox:before {
-  background-color: #BAA38F;
-  bottom: -70px;
-  right: -45px;
-  height: 170px;
-  width: 90px;
   content: "";
+  background: #fff;
+  width: 2px;
+  height: 125px;
   position: absolute;
-  border-left: 1px solid white;
-  z-index: 11;
-  transform: rotate(40deg);
+  bottom: -8px;
+  right: 40px;
+  transform: rotate(37deg);
 }
 
 .mainFullImgSec {

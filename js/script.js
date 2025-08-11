@@ -14,10 +14,10 @@ jQuery(function ($) {
   var swiperProjects = new Swiper(".projectSlider", {
     slidesPerView: 1,
     spaceBetween: 30,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     speed: 800,
     breakpoints: {
       // when window width is >= 992px
